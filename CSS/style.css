@@ -1,1 +1,171 @@
 @charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+.inner {
+  position: relative;
+  width: 1180px;
+  margin: auto;
+  /* background-color: rgb(244, 244, 238); */
+}
+/* 상단 */
+header {
+  width: 100%;
+  /* background-color: aqua; */
+}
+header .inner {
+  height: 120px;
+}
+header .header-top {
+  position: relative;
+  height: 60px;
+}
+header .header-top .util {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  text-align: center;
+}
+.util li {
+  float: left;
+}
+.util li a {
+  display: block;
+  padding: 0 10px;
+  font: 13px/1 "arial";
+}
+header .header-bt {
+  position: relative;
+  height: 60px;
+}
+header .header-bt h1 {
+  float: left;
+  line-height: 60px;
+}
+header .header-bt #gnb {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+header .header-bt #gnb li {
+  float: left;
+}
+header .header-bt #gnb li a {
+  display: block;
+  font: bold 15px/1 "arial";
+  padding: 20px 40px;
+}
+header .header-bt #gnb li a:hover {
+  background-color: #333;
+  color: #fff;
+}
+/* 비디오 영역 */
+figure {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 120px);
+  padding-top: 250px;
+  background-color: #000;
+}
+figure video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* 영상을 figure영역에 너비에 꼭차게 설정 */
+  object-fit: cover;
+  opacity: 0.3;
+}
+figure .inner {
+}
+figure .inner h1 {
+  font: normal 120px/1 "arial";
+  color: #fff;
+  margin-bottom: 20px;
+}
+figure .inner p {
+  font: 16px/1.4 "arial";
+  color: #888;
+  margin-bottom: 60px;
+}
+figure .inner a {
+  display: block;
+  width: 400px;
+  /* height: 30px; */
+  border: 1px solid #bbb;
+  font: bold 12px/30px "arial";
+  color: #fff;
+  text-align: center;
+  transition: all 0.5s;
+}
+figure .inner a:hover {
+  background-color: #bbb;
+  color: #333;
+}
+/* 뉴스영역 */
+section {
+  width: 100%;
+  padding: 200px 0;
+  background-color: aqua;
+}
+section .inner h2 {
+  font: bold 24px/1 "arial";
+  color: #333;
+  text-align: center;
+  padding-bottom: 50px;
+  background-color: aliceblue;
+}
+.section-wrap {
+  width: 100%;
+  background-color: antiquewhite;
+}
+.section-wrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.section-wrap article {
+  /* width: calc(100% / 4 - 15px); */
+  width: calc((100% - 60px) / 4);
+  float: left;
+  margin-right: 20px;
+}
+.section-wrap article:last-child {
+  margin-right: 0;
+}
+.section-wrap article .pic {
+    position: relative;
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+}
+.section-wrap article .pic img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  /* height: 100%; */
+}
+.section-wrap article h3{
+    margin-bottom: 10px;
+}
+.section-wrap article h3 a{
+    font: bold 16px/1 "arial";
+    color: #555;
+}
+.section-wrap article p{
+    font: 14px/1.4 "arial";
+    color: #777;
+}
