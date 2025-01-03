@@ -118,18 +118,18 @@ figure .inner a:hover {
 section {
   width: 100%;
   padding: 200px 0;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 section .inner h2 {
   font: bold 24px/1 "arial";
   color: #333;
   text-align: center;
   padding-bottom: 50px;
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
 }
 .section-wrap {
   width: 100%;
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
 }
 .section-wrap::after {
   content: "";
@@ -150,6 +150,7 @@ section .inner h2 {
   width: 100%;
   height: 120px;
   overflow: hidden;
+  margin-bottom: 15px;
 }
 .section-wrap article .pic img {
   width: 100%;
@@ -168,4 +169,50 @@ section .inner h2 {
 .section-wrap article p{
     font: 14px/1.4 "arial";
     color: #777;
+}
+/* 하단 */
+footer{
+  width: 100%;
+  background-color: #333;
+  padding: 100px 0;
+  border-top: 1px solid #ddd;
+}
+.upper{
+  background-color: #fff;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #777;
+}
+.upper::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.upper h2{
+  background-color: antiquewhite;
+  font: bold 24px/1 "arial";
+  float: left;
+}
+.upper ul{
+  background-color: aqua;
+ float: right;
+}
+.upper ul li{
+  float: left;
+  margin-left: 20px;
+}
+.upper ul li a{
+  color: #666;
+  font: bold 14px/1 "arial";
+}
+/* 하단 - 아래 */
+.lower{
+  padding-top: 20px;
+}
+.lower address{
+  font: 12px/1.3 "arial";
+  color: #777;
+  margin-bottom: 20px;
+}
+.lower p{
+  font: 12px/1 "arial";
 }
